@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+  background-color: var(--Cream);
+  margin: 20px 10px 20px 10px;
+}
+
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px repeat(2, 1fr);
+  width: 344px;
+  background-color: var(--White);
+  border-radius: 10px;
+  height: 700px;
+}
+.perfume {
+  width: 344px;
+  height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  grid-row: 1/2;
+}
+.perfume2 {
+  display: none;
+}
+.titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: var(--Darkgrayishblue);
+  letter-spacing: 2px;
+}
+.container2 {
+  padding: 0 24px;
+}
+.cass {
+  background-color: var(--Darkcyan);
+  color: var(--White);
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  margin-top: 15px;
+}
+.precio {
+  color: var(--Darkcyan);
+}
+.textp {
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  color: var(--Darkgrayishblue);
+}
+.price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+  font-size: 20px;
+}
+.tehr {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: var(--Darkgrayishblue);
+  text-decoration: line-through;
+}
+.text {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  margin-top: 10px;
+}
+/* ***** sección media queries>1440 **** */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 602px;
+    height: 450px;
+    margin: 175px 418px;
+  }
+  .container2 {
+    width: 301px;
+    grid-column: 2/3;
+    margin-top: 38px;
+  }
+  .perfume {
+    background: url(./images/image-product-desktop.jpg);
+    grid-column: 1/2;
+    display: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .cass {
+    width: 250px;
+    height: 50px;
+  }
+  .perfume2 {
+    display: block;
+    width: 301px;
+    height: 450px;
+  }
+}
