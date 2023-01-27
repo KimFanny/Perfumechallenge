@@ -28,6 +28,7 @@ body {
   background-color: var(--White);
   border-radius: 10px;
   height: 700px;
+  margin: 0 auto;
 }
 .perfume {
   width: 344px;
